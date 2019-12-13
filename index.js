@@ -30,6 +30,4 @@ function watchForm() {
   });
 }
 
-$(function() {
-  watchForm();
-});
+$(watchForm());
