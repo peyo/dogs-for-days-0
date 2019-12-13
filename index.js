@@ -4,8 +4,7 @@ function getDogImage() {
   let x = document.getElementById("dogcount").value
   fetch(`https://dog.ceo/api/breeds/image/random/${x}`)
     .then(response => response.json())
-    .then(responseJson => 
-      displayResults(responseJson))
+    .then(responseJson => displayResults(responseJson))
     .catch(error => alert("Something went wrong. Try again later."));
 }
 
